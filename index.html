@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
     <title>AddPhoto</title>
 
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="stylesheet" href="./css/fonts.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,103 +17,513 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <nav>
-               <div class="header">
-                <a href="./index.html" class="logo"><img src="./img/icons/logo.png" alt="AddPhoto"></a>
-                <ul class="header_list">
-                    <li class="header_list_item"><a href="#" class="header_list_link">Портфолио</a></li>
-                    <li class="header_list_item"><a href="#" class="header_list_link">Виды работ</a></li>
-                    <li class="header_list_item"><a href="#" class="header_list_link">О фотостудии</a></li>
-                    <li class="header_list_item"><a href="#" class="header_list_link">Услуги и цены</a></li>
-                    <li class="header_list_item"><a href="#" class="header_list_link">Контакты</a></li>
-                </ul>
-               <div class="header_contacts">
-                <button class="header_btn">Обратный звонок</button>
-                <a href="tel:+7(499)3446091" class="header_phone">+7 (499) 344 60 91</a>
-               </div>
-               <div class="phone_icon">
-                <img src="./img/icons/phone.svg" alt="">
-               </div>
-               <div class="burger">
-                <span></span><span></span><span></span>
-              </div>
-               </div>
+                <div class="header__wrapper">
+                    <a class="logo" href="./index.html"><img src="./img/icons/logo.png" alt="AddPhoto"></a>
+                    <ul class="header__list">
+                        <li class="header__list-item"><a href="#" class="header__list-link">Портфолио</a></li>
+                        <li class="header__list-item"><a href="#" class="header__list-link">Виды работ</a></li>
+                        <li class="header__list-item"><a href="#" class="header__list-link">О фотостудии</a></li>
+                        <li class="header__list-item"><a href="#" class="header__list-link">Услуги и цены</a></li>
+                        <li class="header__list-item"><a href="#" class="header__list-link">Контакты</a></li>
+                    </ul>
+                    <div class="header__contacts">
+                        <button class="header__btn">Обратный звонок</button>
+                        <a href="tel:+7(499)3446091" class="header__phone">+7 (499) 344 60 91</a>
+                    </div>
+                    <div class="phone__icon">
+                        <img src="./img/icons/phone.svg" alt="">
+                    </div>
+                    <div class="burger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
 
     <main>
         <section class="prof">
-            <h1 class="prof_title">Профессиональная фотосессия в студии</h1>
-            <div class="prof_subtitle">Наша фотостудия позволит исполнить ваши мечты</div>
-            <div class="prof_text">
-                Фотографии стали неотъемлемой частью нашей жизни. Это теперь не просто 
-                памятные снимки вальбомах, ныне фото становиться способом
-                понравиться окружающим, 
-                получить восхищение, заявить о себе всему миру. <br> 
-                Выбор правильной фотостудии занимает далеко не последнее место 
-                в получение фотографий. И мы с точностью заявляем, что нашей 
-                фотостудией вы останетесь довольны 
-                и еще не раз захотите возвращаться к нам. 
+            <div class="container">
+                <h1 class="prof__title">Профессиональная фотосессия в студии</h1>
+                <div class="prof__subtitle">Наша фотостудия позволит исполнить ваши мечты</div>
+                <div class="prof__text">
+                    Фотографии стали неотъемлемой частью нашей жизни. Это теперь не просто
+                    памятные снимки вальбомах, ныне фото становиться способом
+                    понравиться окружающим,
+                    получить восхищение, заявить о себе всему миру. <br>
+                    Выбор правильной фотостудии занимает далеко не последнее место
+                    в получение фотографий. И мы с точностью заявляем, что нашей
+                    фотостудией вы останетесь довольны
+                    и еще не раз захотите возвращаться к нам.
+                </div>
+                <button class="btn prof__btn">Получить консультацию</button>
             </div>
-            <button class="prof_btn">Получить консультацию</button>
         </section>
 
         <section class="works">
-            <h2 class="title">Наши работы</h2>
-           <div class="works_slider">
-                <div class="works_slider_item">
-                    <img src="./img/works_first.png" alt="">
+            <div class="container">
+                <h2 class="title works__title">Наши работы</h2>
+                <div class="works__slider">
+                    <div class="works__slider-item">
+                        <img src="./img/works_first.png" alt="our work">
+                    </div>
+                    <div class="works__slider-item">
+                        <img src="./img/works_second.png" alt="our work">
+                    </div>
+                    <div class="works__slider-item">
+                        <img src="./img/works_third.png" alt="our work">
+                    </div>
+                    <div class="works__slider-item">
+                        <img src="./img/works_second.png" alt="our work">
+                    </div>
                 </div>
-                <div class="works_slider_item">
-                    <img src="./img/works_first.png" alt="">
-                </div>
-                <div class="works_slider_item">
-                    <img src="./img/works_third.png" alt="">
-                </div>
-                <div class="works_slider_item">
-                    <img src="./img/works_third.png" alt="">
-                </div>
-           </div>
+            </div>
         </section>
 
         <section class="location">
-            <h2 class="title">
+            <h2 class="title location__title">
                 Наши локации
             </h2>
-            <div class="location_slider">
-                <div class="location_slider_item">
-                    <img src="./img/location_first.png" alt="">
+            <div class="container">
+                <div class="location__slider">
+                    <div class="location__slider-item">
+                        <img src="./img/location_first.png" alt="location">
+                    </div>
+                    <div class="location__slider-item">
+                        <img src="./img/location_second.png" alt="location">
+                    </div>
+                    <div class="location__slider-item">
+                        <img src="./img/location_third.png" alt="location">
+                    </div>
+                    <div class="location__slider-item">
+                        <img src="./img/location_second.png" alt="location">
+                    </div>
                 </div>
-                <div class="location_slider_item">
-                    <img src="./img/location_second.png" alt="">
-                </div>
-                <div class="location_slider_item">
-                    <img src="./img/location_third.png" alt="">
-                </div>
-                <div class="location_slider_item">
-                    <img src="./img/location_second.png" alt="">
-                </div>
-           </div>
-           <button class="location_btn">Выбрать локацию</button>
+                <button class="btn location__btn">Выбрать локацию</button>
+            </div>
         </section>
 
         <section class="decor">
-            <h2 class="title">Оформление студии</h2>
-            <div class="decor_video">
-                <div class="decor_pause">
+            <h2 class="title decor__title">Оформление студии</h2>
+            <div class="decor__video">
+                <video>
+                    <source src="#" type="video/mp4">
+                    <source src="#" type="video/webm">
+                    <source src="#" type="video/ogg">
+                </video>
+                <div class="decor__pause">
                     <img src="./img/decor_video.png" alt="">
                 </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2 class="title services__title">Виды услуг</h2>
+                <div class="services__wrapper">
+                    <a class="services__item" href="#">
+                        <img class="services__image services__image-love" src="./img/services_love.png"
+                            alt="Фотосессия Лав Стори">
+                        <p class="services__text">Фотосессия Лав Стори</p>
+                    </a>
+
+                    <a class="services__item services__item-teens" href="#">
+                        <img class="services__image " src="./img/services_teens.png" alt="Фотосессия для подростков">
+                        <p class="services__text">Фотосессия для подростков</p>
+                    </a>
+
+                    <a class="services__item services__item-couple" href="#">
+                        <img class="services__image" src="./img/services_couple.png" alt="Парная фотосессия">
+                        <p class="services__text">Парная фотосессия</p>
+                    </a>
+
+                    <a class="services__item" href="#">
+                        <img class="services__image" src="./img/services_men.png" alt="Фотосессия для парней">
+                        <p class="services__text">Фотосессия для парней</p>
+                    </a>
+
+                    <a class="services__item" href="#">
+                        <img class="services__image" src="./img/services_lookbook.png" alt="Фотосессия Лукбук">
+                        <p class="services__text">Фотосессия Лукбук</p>
+                    </a>
+
+                    <a class="services__item services__item-family" href="#">
+                        <img class="services__image" src="./img/services_family.png"
+                            alt="Семейная фотосессия (дети +14)">
+                        <p class="services__text">Семейная фотосессия (дети +14)</p>
+                    </a>
+
+                    <a class="services__item services__item-group" href="#">
+                        <img class="services__image" src="./img/services_group.png" alt="Групповая фотосессия">
+                        <p class="services__text">Групповая фотосессия</p>
+                    </a>
+
+                    <a class="services__item services__item-women" href="#">
+                        <img class="services__image" src="./img/services_women.png" alt="Фотосессия для девушек">
+                        <p class="services__text">Фотосессия для девушек</p>
+                    </a>
+
+                    <a class="services__item services__item-pregnant" href="#">
+                        <img class="services__image" src="./img/services_pregnant.png" alt="Фотосессия для беременных">
+                        <p class="services__text">Фотосессия для беременных</p>
+                    </a>
+
+                    <a class="services__item services__item-animals" href="#">
+                        <img class="services__image" src="./img/services_animals.png" alt="Фотосессия с животными">
+                        <p class="services__text">Фотосессия с животными</p>
+                    </a>
+
+                    <a class="services__item services__item-formal" href="#">
+                        <img class="services__image" src="./img/services_formal.png" alt="Фотосессия «Деловой стиль»">
+                        <p class="services__text">Фотосессия «Деловой стиль»</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stages">
+            <div class="container">
+                <h2 class="title stages__title">Этапы работ</h2>
+
+                <div class="stages__wrapper">
+                    <div class="stages__item-wrapper">
+                        <div class="stages__item stages__item-1">
+                            <div class="stages__item-title">Заявка</div>
+                            <div class="stages__item-text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь
+                                еще этих мягких. </div>
+                            <div class="stages__circle">
+                                <div class="stages__circle-number">1</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="stages__item-wrapper">
+                        <div class="stages__item stages__item-2">
+                            <div class="stages__item-title">Бронь</div>
+                            <div class="stages__item-text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь
+                                еще этих мягких. </div>
+                            <div class="stages__circle">
+                                <div class="stages__circle-number">2</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="stages__item-wrapper">
+                        <div class="stages__item stages__item-3">
+                            <div class="stages__item-title">Составление Технического задания</div>
+                            <div class="stages__item-text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь
+                                еще этих мягких. </div>
+                            <div class="stages__circle">
+                                <div class="stages__circle-number">3</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stages__item-wrapper">
+                        <div class="stages__item stages__item-4">
+                            <div class="stages__item-title">Съёмка</div>
+                            <div class="stages__item-text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь
+                                еще этих мягких. </div>
+                            <div class="stages__circle">
+                                <div class="stages__circle-number">4</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stages__item-wrapper">
+                        <div class="stages__item stages__item-5">
+                            <div class="stages__item-title">Готовые фото</div>
+                            <div class="stages__item-text">Съешь еще этих мягких французских булок, да выпей чаю. Съешь
+                                еще этих мягких. </div>
+                            <div class="stages__circle">
+                                <div class="stages__circle-number">5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stages__bg">
+                    <img src="./img/stages_bg.png" alt="">
+                </div>
+        </section>
+
+        <section class="studio">
+            <div class="container">
+                <h2 class="title studio__title">Фотостудия для любых идейных фотоссесий</h2>
+                <p class="studio__text">Воплотите мечту с нашей фотостудией и приобретите красивые, уникальные,
+                    качественные фотографии, выбрав один из наших залов.
+                </p>
+                <p class="studio__text"> А их, -на секундочку, -аж семь штук.</p>
+                <p class="studio__text">Каждый наш зал оборудован интерьером и профессиональным оборудованием, и
+                    подойдет для любой фотоссесии, а мы хотим рассказать
+                    вам о все подробнее.</p>
+                <p class="studio__text"> Какие идеи можно воплотить?</p>
+                <p class="studio__text"> • Фотоссесия Love Story</p>
+                <p class="studio__text studio__text-disabled">Мечтаете показать всему миру вашу историю создания любви
+                    или хранить снимки в памятном альбоме... </p>
+
+                <p class="studio__text studio__text-dream"> Мечтаете показать всему миру вашу историю создания любви или
+                    хранить снимки
+                    в памятном альбоме, то это фотоссесия отлично подойдет вам. Расскажите вашу историю с любимым
+                    человеком
+                    в фотографиях в необычном месте.
+                </p>
+                <p class="studio__text studio__text-fam-ph"> • Семейная фотоссесия</p>
+                <p class="studio__text studio__text-family">Семья — это самое главное в жизни любого человека. Хотите
+                    повесить ...</p>
+
+                <div class="details">
+                    <div class="details__text">Подробнее</div>
+                    <div class="details__arrow"><img src="./img/icons/arrow_bottom.svg" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="price">
+            <div class="container">
+                <h2 class="price__title">Стоимость фотосесии</h2>
+                <div class="price__wrapper">
+                    <div class="price__content">
+                        <div class="price__item price__item-mini">
+                            <div class="price__bg"><img src="./img/price_mini_bg.png" alt=""></div>
+                            <div class="price__subtitle">mini</div>
+                            <div class="price__number">2500 ₽</div>
+                            <div class="price__location">/ 1 локация</div>
+                            <ul class="price__list">
+                                <li class="price__list-item">Длительность — 30 минут</li>
+                                <li class="price__list-item">Исходники — До 100 штук</li>
+                                <li class="price__list-item">Ретушь — 4 фото</li>
+                                <li class="price__list-item">Аренда фотостудии — Бесплатно</li>
+                                <li class="price__list-item">Любой образ</li>
+                            </ul>
+                            <div class="price__services-subtitle">Дополнительные услуги</div>
+                            <div class="price__services-wrapper">
+                                <div class="price__services-item">Помощь <br> в позировании</div>
+                                <div class="price__services-item">Визажист <br> + 2000 ₽</div>
+                                <div class="price__services-item">Дополнительная ретушь фото — 1 шт. / 250 ₽</div>
+                            </div>
+                            <button class="btn price__btn">Забронировать</button>
+                            <button class="btn price__btn-location">Выбрать локацию</button>
+                        </div>
+                    </div>
+
+                    <div class="price__item price__item-standart">
+                        <div class="price__bg"><img src="./img/price_mini_bg.png" alt=""></div>
+                        <div class="price__content">
+                            <div class="price__subtitle">standart</div>
+                            <div class="price__number">5000 ₽</div>
+                            <div class="price__location">/ 2 локации </div>
+                            <ul class="price__list">
+                                <li class="price__list-item">Длительность — 1 час 20 минут </li>
+                                <li class="price__list-item">Исходники — До 200 штук</li>
+                                <li class="price__list-item">Ретушь — 8 фото</li>
+                                <li class="price__list-item">Аренда фотостудии — Бесплатно</li>
+                                <li class="price__list-item">Любой образ</li>
+                            </ul>
+                            <div class="price__services-subtitle">Дополнительные услуги</div>
+                            <div class="price__services-wrapper">
+                                <div class="price__services-item">Помощь <br> в позировании</div>
+                                <div class="price__services-item">Визажист <br> + 2000 ₽</div>
+                                <div class="price__services-item">Дополнительная ретушь фото — 1 шт. / 250 ₽</div>
+                            </div>
+                            <button class="btn price__btn">Забронировать</button>
+                            <button class="btn price__btn-location">Выбрать локацию</button>
+                        </div>
+                    </div>
+
+                    <div class="price__item price__item-maxi">
+                        <div class="price__bg"><img src="./img/price_maxi_bg.png" alt=""></div>
+                        <div class="price__content">
+                            <div class="price__subtitle">maxi</div>
+                            <div class="price__number">N ₽</div>
+                            <div class="price__location">/ Максимальное количество локаций</div>
+                            <ul class="price__list">
+                                <li class="price__list-item">Длительность — 4 часа</li>
+                                <li class="price__list-item">Исходники — До 500 штук</li>
+                                <li class="price__list-item">Ретушь — 50 фото</li>
+                                <li class="price__list-item">Аренда фотостудии — Бесплатно</li>
+                                <li class="price__list-item">Визажист — Make-Up, Укладка</li>
+                                <li class="price__list-item">Предварительный подбор образов — До 8 образов</li>
+                            </ul>
+                            <div class="price__services-subtitle">Дополнительные услуги</div>
+                            <div class="price__services-wrapper">
+                                <div class="price__services-item">Дополнительная ретушь фото — 1 шт. / 250 ₽</div>
+                            </div>
+                            <button class="btn price__btn">Забронировать</button>
+                            <button class="btn price__btn-location">Выбрать локацию</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="art">
+            <div class="container">
+                <h2 class="title art__title">Фотоискусство в тренде. Любая фотоссесия ваша история</h2>
+                <p class="art__text">Мы искренни так считаем и готовы кричать эту фразу на весь мир. Фотографии давно
+                    перестали пылиться на полках в семейных, потрёпанных альбомах. </p>
+                <p class="art__text">Хотите самовыразиться и не знаете как? Позвоните нам и закажите фотосъемку. <br>
+                    Хотите удивить и впечатлить? Мы вам поможем. <br>
+                    Не уверены? Посмотрите отзывы и проконсультируйтесь. <br>
+                    Боитесь фотографироваться? Наши локации помогут вам расслабиться и почувствовать себя как дома.</p>
+                <p class="art__text">Доступные цены для всех и вежливость.</p>
+                <p class="art__text art__text-continue"> Повторим еще раз: мы работаем в первую очередь для клиентов, и
+                    аренда нашей фотостудии имеют цены семи...</p>
+                <p class="art__text art__text-continue_long">Повторим еще раз: мы работаем в первую очередь для
+                    клиентов, и аренда нашей фотостудии имеют цены семи чашек кофе. Вы можете расплатится любым удобным
+                    для вас способом: наличным
+                    или безналичным ...</p>
+                <div class="details">
+                    <div class="details__text">Подробнее</div>
+                    <div class="details__arrow"><img src="./img/icons/arrow_bottom.svg" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sertificate">
+            <div class="container">
+                <h2 class="title sertificate__title">Подарочный сертификат на фотосессию</h2>
+
+                <div class="sertificate__wrapper">
+
+                    <div class="sertificate__wrapper-desc">
+                        <div class="sertificate__wrapper-subtitle">СЕРТИФИКАТ НА ФОТОСЕССИЮ</div>
+                        <div class="sertificate__wrapper-title">Это подарок, который западает в душу</div>
+                        <div class="sertificate__list">
+                            <li class="sertificate__list-item">Креативное оформление</li>
+                            <li class="sertificate__list-item">Открытый календарь</li>
+                            <li class="sertificate__list-item">Всё включено</li>
+                        </div>
+                    </div>
+
+                    <div class="sertificate__wrapper-right">
+                        <div class="envelope"><img src="./img/sertificate_envelope.png" alt="sertificate"></div>
+                        <div class="sertificate__wrapper-right-text">Срок действия сертификата: 2 месяца со дня
+                            приобретения.</div>
+                        <button class="btn sertificate__btn">приобрести</button>
+                    </div>
+                </div>
+                <img class="sertificate__bg" src="./img/sertificate_bg.png" alt="">
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h2 class="title reviews__title">Отзывы</h2>
+                <div class="reviews__slider">
+
+
+                    <div class="reviews__slider-item ">
+                        <div class="reviews__desc">
+                            <div class="reviews__photo"><img src="./img/reviews_maria.png" alt="Maria"></div>
+                            <div class="reviews__name">Мария</div>
+                            <div class="reviews__text">Съешь еще этих мягких французских булок, да выпей чаю.
+                                Съешь еще этих мягких французских булок, да выпей чаю. Съешь
+                                еще этих мягких французских булок, да выпей чаю.</div>
+                            <div class="show-more">Показать еще</div>
+                        </div>
+                    </div>
+
+
+                    <div class="reviews__slider-item">
+                        <div class="reviews__desc">
+                            <div class="reviews__photo"><img src="./img/reviews_sergey.png" alt="Sergey"></div>
+                            <div class="reviews__name">Сергей</div>
+                            <div class="reviews__text">Съешь еще этих мягких французских булок, да выпей чаю.
+                                Съешь еще этих мягких французских булок, да выпей чаю. Съешь
+                                еще этих мягких французских булок, да выпей чаю.</div>
+                            <div class="show-more">Показать еще</div>
+                        </div>
+                    </div>
+
+
+                    <div class="reviews__slider-item">
+                        <div class="reviews__desc">
+                            <div class="reviews__photo"><img src="./img/reviews_ruslan.png" alt="Ruslan"></div>
+                            <div class="reviews__name">Руслан</div>
+                            <div class="reviews__text">Съешь еще этих мягких французских булок, да выпей чаю.
+                                Съешь еще этих мягких французских булок, да выпей чаю. Съешь
+                                еще этих мягких французских булок, да выпей чаю.</div>
+                            <div class="show-more">Показать еще</div>
+                        </div>
+                    </div>
+
+                    <div class="reviews__slider-item">
+                        <div class="reviews__desc">
+                            <div class="reviews__photo"><img src="./img/reviews_sergey.png" alt="Sergey"></div>
+                            <div class="reviews__name">Сергей</div>
+                            <div class="reviews__text">Съешь еще этих мягких французских булок, да выпей чаю.
+                                Съешь еще этих мягких французских булок, да выпей чаю. Съешь
+                                еще этих мягких французских булок, да выпей чаю.</div>
+                            <div class="show-more">Показать еще</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn add-review">Добавить отзыв</button>
+            </div>
+        </section>
+
+        <section class="form">
+            <div class="container">
+                <div class="form__wrapper">
+                    <div class="map">
+                        <div class="map__photo"><img src="./img/map.png" alt="map"></div>
+                        <div class="map__photo-min"><img src="./img/map_min.png" alt="map"></div>
+                        <div class="map__contacts"><img src="./img/map_contacts.png" alt="our contacts"></div>
+                    </div>
+
+                    <div class="form__body">
+
+                        <div class="form__body-wrapper">
+                            <div class="form__items">
+                                <div class="form__title">Форма обратной связи</div>
+                                <div class="form__item">
+                                    <label for="formName" class="form__label">Имя</label>
+                                    <input id="formName" type="text" class="form__input" placeholder="Введите ваше имя">
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="formEmail" class="form__label">E-mail</label>
+                                    <input id="formEmail" type="email" class="form__input"
+                                        placeholder="Введите ваш E-mail">
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="formNumber" class="form__label">Телефон</label>
+                                    <input id="formNumber" type="text" class="form__input"
+                                        placeholder="Введите ваше Телефон">
+                                </div>
+
+                                <button class="btn form__btn" type="submit">Отправить</button>
+                            </div>
+
+                            <div class="form__text">
+                                Нажимая кнопку «Отправить», вы даете согласие на обработку
+                                персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                            </div>
+                        </div>
+                        <div class="form__bg-bottom"><img src="./img/form_bg_bottom.png" alt=""></div>
+                        <div class="form__bg-top"><img src="./img/form_bg.png" alt=""></div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
 
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="./js/slick.min.js"></script>
-   <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
+
 </body>
+
 </html>
