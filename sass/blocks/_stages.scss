@@ -1,8 +1,8 @@
 .stages {
     position: relative;
     padding: 68px 110px 168px;
-    box-sizing: border-box;
-    min-height: 1212px;
+    box-sizing: content-box;
+  //  height: 1212px;
    
     &__bg {
         position: absolute;
@@ -16,6 +16,8 @@
       margin-bottom: 80px;
     }
     &__wrapper {
+      height: 830px;
+      position: relative;
       margin: 0 auto;
 
       .stages__item {
@@ -30,28 +32,29 @@
         padding: 39px 39px 51px 40px;
         box-sizing: border-box;
         &-1 {
-          top: 218px;
-          left: 112px;
+          top: 36px;
+          left: 0;
         }
       
         &-2 {
-          top: 275px;
-          right: 359px;
+          top: 37px;
+    right: 258px;
+          
         }
       
         &-3 {
-          top: 572px;
-          left: 274px;
+          top: 333px;
+          right: 8px;
         }
       
         &-4 {
-          top: 577px;
-          right: 108px;
+          top: 333px;
+          left: 185px;
         }
       
       &-5 {
-          bottom: 168px;
-          right: 585px;
+          bottom: 0;
+          right: 490px;
         }
     
         &-title {
