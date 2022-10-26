@@ -1,0 +1,83 @@
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:hover {
+        background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: #333333;
+}
+
+@media (max-width:1025px) {
+    .title {
+        font-size: 30px;
+    }
+}
+@media (max-width:376px) {
+    .title {
+        font-size: 24px;
+    }
+}
+
+.details {
+    &__text {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #E97522;
+        margin-right: 16px;
+    }
+    position: absolute;
+    right: 100px;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__arrow {
+        cursor: pointer;
+    }
+}
+
+@import "./blocks/header";
+@import "./blocks/prof";
+@import "./blocks/slider";
+@import "./blocks/works";
+@import "./blocks/location";
+@import "./blocks/decor";
+@import "./blocks/services";
+@import "./blocks/stages";
+@import "./blocks/studio";
+@import "./blocks/price";
+@import "./blocks/art";
+@import "./blocks/sertificate";
+@import "./blocks/reviews";
+@import "./blocks/form";

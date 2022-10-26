@@ -1,0 +1,136 @@
+.prof {
+    background: #444444;
+    padding: 149px 10px 140px 100px;
+  
+    &__title {
+      max-width: 790px;
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 66px;
+      line-height: 78px;
+      color: #F5F5F5;
+      margin-bottom: 55px;
+    }
+  
+    &__subtitle {
+      max-width: 550px;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 43px;
+      color: #F5F5F5;
+      margin-bottom: 24px;
+    }
+  
+    &__text {
+      max-width: 790px;
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #F5F5F5;
+      margin-bottom: 32px;
+    }
+  
+    &__btn {
+      max-width: 366px;
+      height: 64px;
+    }
+  }
+
+
+  @media (max-width: 992px) {
+    .prof {
+      padding-left: 60px;
+  
+      .prof__title {
+        font-size: 55px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+
+
+
+  @media (max-width: 768px) {
+    .prof {
+      .prof__title {
+        line-height: 54px;
+        font-size: 45px;
+      }
+  
+      .prof__subtitle {
+        font-size: 30px;
+        line-height: 38px;
+      }
+  
+      .prof__text {
+        max-width: 615px;
+      }
+    }
+  }
+  
+
+  
+  @media (max-width: 576px) {
+    .prof {
+      padding-left: 35px;
+  
+      .prof__title {
+        line-height: 45px;
+        font-size: 33px;
+        margin-bottom: 15px;
+      }
+  
+      .prof__subtitle {
+        font-size: 19px;
+        max-width: 500px;
+      }
+  
+      .prof__text {
+        max-width: 500px;
+      }
+    }
+  }
+  
+
+
+
+  @media (max-width: 376px) {
+    .prof {
+      padding: 182px 0 184px;
+  
+      .prof__subtitle, .prof__text {
+        display: none;
+      }
+  
+      .prof__btn {
+        width: 320px;
+        height: 56px;
+        display: block;
+        margin: 0 auto;
+      }
+  
+      .prof__title {
+        font-size: 24px;
+        text-align: center;
+        line-height: 34px;
+        letter-spacing: 1.2px;
+      }
+    }
+  }
+
+
+  @media (max-width: 340px) {
+    .prof {
+      .prof__title {
+        font-size: 18px;
+        line-height: 28px;
+      }
+  
+      .prof__btn {
+        width: 270px;
+        height: 50px;
+      }
+    }
+  }

@@ -1,0 +1,264 @@
+.price {
+    padding: 97px 100px 160px;
+    background: url(/add_photo/img/price_bg_desktop.png) center/cover no-repeat;
+  
+
+    &__title {
+        font-family: 'Futura LT';
+        font-weight: 700;
+        font-size: 36px;
+        color: #333333;
+        margin-bottom: 80px;
+        text-align: center;
+      }
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+
+      .price__item {
+        position: relative;
+        max-width: 398px;
+        min-height: 654px;
+        background: #F2F4F4;
+        border-radius: 16px;
+        padding: 48px 15px 42px;
+        box-sizing: border-box;
+
+        .price__bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+        
+            img {
+              border-top-right-radius: 16px;
+            }
+          }
+
+          
+        .price__subtitle {
+            font-family: 'Montserrat';
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 18px;
+            color: #4A4A4A;
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .price__number {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 56px;
+            color: #333333;
+            margin-left: 30px;
+            margin-bottom: 10px;
+          }
+
+        .price__location {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 14px;
+            color: #838383;
+            margin-left: 30px;
+            margin-bottom: 41px;
+        }
+
+        .price__list {
+            margin-left: 56px;
+            margin-bottom: 33px;
+      
+            &-item {
+              font-family: 'Montserrat';
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 22px;
+              color: #333333;
+              margin-bottom: 19px;
+              position: relative;
+
+              &::before {
+                content: '';
+                position: absolute;
+                top: -1px;
+                left: -26px;
+                vertical-align: middle;
+                width: 18px;
+                height: 18px;
+                background: url('/add_photo/img/icons/check_circle.svg') center/cover no-repeat;
+              }
+            }
+          }
+
+          .price__services-subtitle {
+            font-family: 'Montserrat';
+            font-weight: 600;
+            font-size: 16px;
+            color: #333333;
+            text-align: center;
+            margin-bottom: 12px;
+          }
+      
+          .price__services-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 66px;
+          }
+      
+          .price__services-item {
+            min-width: 110px;
+            height: 40px;
+            background: #FFFFFF;
+            border: 1px solid #C2C2C2;
+            border-radius: 5px;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #333333;
+            padding-right: 5px;
+            box-sizing: border-box;
+            margin-right: 5px;
+          }
+
+          .price__btn {
+            width: 370px;
+            height: 48px;
+            display: block;
+            margin: 0 auto;
+          }
+          .price__btn-location {
+            width: 370px;
+            height: 48px;
+            display: none;
+            margin: 0 auto;
+          }
+      }
+    
+      .price__item-mini {
+        background: #F2F4F4;
+      }
+    
+      .price__item-maxi {
+        background: #F5D9C6;
+        box-sizing: content-box;
+
+        .price__services-item {
+            max-width: 165px;
+            margin: 0 auto;
+          }
+      }
+
+      .price__item-standart {
+        background: #F9F4EE;
+      }
+    }
+  
+}
+
+@media (max-width:1400px) {
+  .price {
+    padding: 100px 50px 100px 80px;
+    &__wrapper {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      .price__item-mini, .price__item-standart {
+        margin-bottom: 34px;
+      }
+    }
+  }
+}
+
+@media (max-width:1200px) {
+  .price {
+    padding: 100px 70px 100px 80px;
+    background: url(/add_photo/img/price_bg_tablet.png) center/cover no-repeat;
+    &__title {
+      font-size: 30px;
+    }
+    }
+}
+
+
+@media (max-width:992px) {
+  .price {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width:576px) {
+  .price {
+    padding: 60px 16px;
+    background: none;
+    &__title {
+      margin-bottom: 30px;
+    }
+      &__item {
+       max-width: 343px;
+       min-height: 643px;
+       
+      }
+      &__wrapper {
+        .price__item {
+          padding: 45px 19px;
+          box-sizing: border-box;
+          justify-content: center;
+          .price__number {
+            font-size: 36px;
+           }
+          &-maxi {
+            box-sizing: border-box;
+            .price__services-wrapper {
+              margin-bottom: 32px;
+            }
+          }
+          
+         &-mini, &-standart {
+          .price__services-wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 64px;
+            .price__services-item:nth-child(1), .price__services-item:nth-child(2) {
+              margin-bottom: 5px;
+            }
+            .price__services-item:nth-child(3){
+              margin-bottom: -32px;
+            }
+           }
+         }
+         
+          .price__btn {
+            display: none;
+          }
+           .price__btn-location {
+            max-width: 320px;
+            height: 56px;
+            display: block;
+          }
+        }
+      }
+    } 
+  }
+
+  @media (max-width:340px) {
+    .price {
+      
+     &__wrapper {
+      .price__item {
+          max-width: 300px;
+          .price__btn-location {
+            width: 260px;
+          }
+        }
+       
+      }
+     }
+    }
+  
