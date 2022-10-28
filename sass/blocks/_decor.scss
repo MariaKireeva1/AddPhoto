@@ -1,6 +1,6 @@
 .decor {
     padding: 60px 0 50px;
-    
+
     &__title {
       margin-bottom: 80px;
     }
@@ -21,7 +21,6 @@
 
   @media (max-width:1024px) {
     .decor {
-      min-height: 1026px;
       &__title {
         font-size: 30px;
       }
@@ -36,7 +35,6 @@
 
   @media (max-width:576px) {
     .decor {
-      min-height: 375px;
       padding-bottom: 0;
       &__title {
         margin-bottom: 40px;

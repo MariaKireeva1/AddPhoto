@@ -133,6 +133,7 @@
 
 @media (max-width:769px) {
   .works {
+    padding: 47px 0 0px 0;
     &__slider {
         &-item {
           img {
@@ -156,7 +157,6 @@
   
     @media (max-width:576px) {
       .works {
-        padding: 90px 0 0 0;
         &__slider {
     
           .slick-arrow.slick-prev {
