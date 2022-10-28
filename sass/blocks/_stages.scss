@@ -9,7 +9,6 @@
   }
   &__title {
     margin-bottom: 30px;
-    // margin-bottom: 5rem;
   }
   &__item {
     position: absolute;
@@ -21,11 +20,9 @@
         box-shadow: 0px 24px 38px rgba(220, 220, 220, 0.14), 0px 9px 46px rgba(216, 216, 216, 0.12), 0px 11px 15px rgba(221, 221, 221, 0.2);
         border-radius: 0.75rem;
         padding: 2.4375rem 2.4375rem  3.1875rem 2.5rem;
-        // padding: 39px 39px 51px 40px;
         box-sizing: border-box;
 
         &-title {
-          font-family: 'Montserrat';
           font-weight: 600;
           font-size: 1.125rem;
           line-height: 120%;
@@ -34,7 +31,6 @@
         }
 
         &-text {
-          font-family: 'Montserrat';
           font-weight: 500;
           font-size: 1rem;
           line-height: 140%;
@@ -79,7 +75,6 @@
     align-items: center;
 
     &-number {
-      font-family: 'Montserrat';
                   font-weight: 700;
                   font-size: 1.875rem;
                   line-height: 37px;
@@ -140,8 +135,6 @@
             }
       
             &-2 {
-              // top: 17.1875rem;
-              // right: 6.25rem;
               top: 23.1875rem;
               right: 9.25rem;
           }
@@ -150,10 +143,6 @@
             &-3 {
               bottom: 46.375rem;
     right: 37.5625rem;
-    //           bottom: 46.375rem;
-    // right: 30.5625rem;
-              // bottom: 33.375rem;
-              // right: 26.5625rem;
             }
       
             &-4 {
